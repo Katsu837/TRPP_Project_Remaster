@@ -53,50 +53,56 @@ const GridOfMonth = function(props)
         gridMonth[i][0] = k
         gridMonth[i][1] = "n"
     }
+
+    function func(date)
+    {
+        props.chooseDay(date);
+    }
+
     return(
         <div className="gridOfMonthSC">
-            <Day chooseDay={props.chooseDay} month={props.month} year={props.year} numDay = {gridMonth[0][0]} monthFlag = {gridMonth[0][1]}/>
-            <Day chooseDay={props.chooseDay} month={props.month} year={props.year} numDay = {gridMonth[1][0]} monthFlag = {gridMonth[1][1]}/>
-            <Day chooseDay={props.chooseDay} month={props.month} year={props.year} numDay = {gridMonth[2][0]} monthFlag = {gridMonth[2][1]}/>
-            <Day chooseDay={props.chooseDay} month={props.month} year={props.year} numDay = {gridMonth[3][0]} monthFlag = {gridMonth[3][1]}/>
-            <Day chooseDay={props.chooseDay} month={props.month} year={props.year} numDay = {gridMonth[4][0]} monthFlag = {gridMonth[4][1]}/>
-            <Day chooseDay={props.chooseDay} month={props.month} year={props.year} numDay = {gridMonth[5][0]} monthFlag = {gridMonth[5][1]}/>
-            <Day chooseDay={props.chooseDay} month={props.month} year={props.year} numDay = {gridMonth[6][0]} monthFlag = {gridMonth[6][1]}/>
-            <Day chooseDay={props.chooseDay} month={props.month} year={props.year} numDay = {gridMonth[7][0]} monthFlag = {gridMonth[7][1]}/>
-            <Day chooseDay={props.chooseDay} month={props.month} year={props.year} numDay = {gridMonth[8][0]} monthFlag = {gridMonth[8][1]}/>
-            <Day chooseDay={props.chooseDay} month={props.month} year={props.year} numDay = {gridMonth[9][0]} monthFlag = {gridMonth[9][1]}/>
-            <Day chooseDay={props.chooseDay} month={props.month} year={props.year} numDay = {gridMonth[10][0]} monthFlag = {gridMonth[10][1]}/>
-            <Day chooseDay={props.chooseDay} month={props.month} year={props.year} numDay = {gridMonth[11][0]} monthFlag = {gridMonth[11][1]}/>
-            <Day chooseDay={props.chooseDay} month={props.month} year={props.year} numDay = {gridMonth[12][0]} monthFlag = {gridMonth[12][1]}/>
-            <Day chooseDay={props.chooseDay} month={props.month} year={props.year} numDay = {gridMonth[13][0]} monthFlag = {gridMonth[13][1]}/>
-            <Day chooseDay={props.chooseDay} month={props.month} year={props.year} numDay = {gridMonth[14][0]} monthFlag = {gridMonth[14][1]}/>
-            <Day chooseDay={props.chooseDay} month={props.month} year={props.year} numDay = {gridMonth[15][0]} monthFlag = {gridMonth[15][1]}/>
-            <Day chooseDay={props.chooseDay} month={props.month} year={props.year} numDay = {gridMonth[16][0]} monthFlag = {gridMonth[16][1]}/>
-            <Day chooseDay={props.chooseDay} month={props.month} year={props.year} numDay = {gridMonth[17][0]} monthFlag = {gridMonth[17][1]}/>
-            <Day chooseDay={props.chooseDay} month={props.month} year={props.year} numDay = {gridMonth[18][0]} monthFlag = {gridMonth[18][1]}/>
-            <Day chooseDay={props.chooseDay} month={props.month} year={props.year} numDay = {gridMonth[19][0]} monthFlag = {gridMonth[19][1]}/>
-            <Day chooseDay={props.chooseDay} month={props.month} year={props.year} numDay = {gridMonth[20][0]} monthFlag = {gridMonth[20][1]}/>
-            <Day chooseDay={props.chooseDay} month={props.month} year={props.year} numDay = {gridMonth[21][0]} monthFlag = {gridMonth[21][1]}/>
-            <Day chooseDay={props.chooseDay} month={props.month} year={props.year} numDay = {gridMonth[22][0]} monthFlag = {gridMonth[22][1]}/>
-            <Day chooseDay={props.chooseDay} month={props.month} year={props.year} numDay = {gridMonth[23][0]} monthFlag = {gridMonth[23][1]}/>
-            <Day chooseDay={props.chooseDay} month={props.month} year={props.year} numDay = {gridMonth[24][0]} monthFlag = {gridMonth[24][1]}/>
-            <Day chooseDay={props.chooseDay} month={props.month} year={props.year} numDay = {gridMonth[25][0]} monthFlag = {gridMonth[25][1]}/>
-            <Day chooseDay={props.chooseDay} month={props.month} year={props.year} numDay = {gridMonth[26][0]} monthFlag = {gridMonth[26][1]}/>
-            <Day chooseDay={props.chooseDay} month={props.month} year={props.year} numDay = {gridMonth[27][0]} monthFlag = {gridMonth[27][1]}/>
-            <Day chooseDay={props.chooseDay} month={props.month} year={props.year} numDay = {gridMonth[28][0]} monthFlag = {gridMonth[28][1]}/>
-            <Day chooseDay={props.chooseDay} month={props.month} year={props.year} numDay = {gridMonth[29][0]} monthFlag = {gridMonth[29][1]}/>
-            <Day chooseDay={props.chooseDay} month={props.month} year={props.year} numDay = {gridMonth[30][0]} monthFlag = {gridMonth[30][1]}/>
-            <Day chooseDay={props.chooseDay} month={props.month} year={props.year} numDay = {gridMonth[31][0]} monthFlag = {gridMonth[31][1]}/>
-            <Day chooseDay={props.chooseDay} month={props.month} year={props.year} numDay = {gridMonth[32][0]} monthFlag = {gridMonth[32][1]}/>
-            <Day chooseDay={props.chooseDay} month={props.month} year={props.year} numDay = {gridMonth[33][0]} monthFlag = {gridMonth[33][1]}/>
-            <Day chooseDay={props.chooseDay} month={props.month} year={props.year} numDay = {gridMonth[34][0]} monthFlag = {gridMonth[34][1]}/>
-            <Day chooseDay={props.chooseDay} month={props.month} year={props.year} numDay = {gridMonth[35][0]} monthFlag = {gridMonth[35][1]}/>
-            <Day chooseDay={props.chooseDay} month={props.month} year={props.year} numDay = {gridMonth[36][0]} monthFlag = {gridMonth[36][1]}/>
-            <Day chooseDay={props.chooseDay} month={props.month} year={props.year} numDay = {gridMonth[37][0]} monthFlag = {gridMonth[37][1]}/>
-            <Day chooseDay={props.chooseDay} month={props.month} year={props.year} numDay = {gridMonth[38][0]} monthFlag = {gridMonth[38][1]}/>
-            <Day chooseDay={props.chooseDay} month={props.month} year={props.year} numDay = {gridMonth[39][0]} monthFlag = {gridMonth[39][1]}/>
-            <Day chooseDay={props.chooseDay} month={props.month} year={props.year} numDay = {gridMonth[40][0]} monthFlag = {gridMonth[40][1]}/>
-            <Day chooseDay={props.chooseDay} month={props.month} year={props.year} numDay = {gridMonth[41][0]} monthFlag = {gridMonth[41][1]}/>
+            <Day chooseDay={func} month={props.month} year={props.year} numDay = {gridMonth[0][0]} monthFlag = {gridMonth[0][1]}/>
+            <Day chooseDay={func} month={props.month} year={props.year} numDay = {gridMonth[1][0]} monthFlag = {gridMonth[1][1]}/>
+            <Day chooseDay={func} month={props.month} year={props.year} numDay = {gridMonth[2][0]} monthFlag = {gridMonth[2][1]}/>
+            <Day chooseDay={func} month={props.month} year={props.year} numDay = {gridMonth[3][0]} monthFlag = {gridMonth[3][1]}/>
+            <Day chooseDay={func} month={props.month} year={props.year} numDay = {gridMonth[4][0]} monthFlag = {gridMonth[4][1]}/>
+            <Day chooseDay={func} month={props.month} year={props.year} numDay = {gridMonth[5][0]} monthFlag = {gridMonth[5][1]}/>
+            <Day chooseDay={func} month={props.month} year={props.year} numDay = {gridMonth[6][0]} monthFlag = {gridMonth[6][1]}/>
+            <Day chooseDay={func} month={props.month} year={props.year} numDay = {gridMonth[7][0]} monthFlag = {gridMonth[7][1]}/>
+            <Day chooseDay={func} month={props.month} year={props.year} numDay = {gridMonth[8][0]} monthFlag = {gridMonth[8][1]}/>
+            <Day chooseDay={func} month={props.month} year={props.year} numDay = {gridMonth[9][0]} monthFlag = {gridMonth[9][1]}/>
+            <Day chooseDay={func} month={props.month} year={props.year} numDay = {gridMonth[10][0]} monthFlag = {gridMonth[10][1]}/>
+            <Day chooseDay={func} month={props.month} year={props.year} numDay = {gridMonth[11][0]} monthFlag = {gridMonth[11][1]}/>
+            <Day chooseDay={func} month={props.month} year={props.year} numDay = {gridMonth[12][0]} monthFlag = {gridMonth[12][1]}/>
+            <Day chooseDay={func} month={props.month} year={props.year} numDay = {gridMonth[13][0]} monthFlag = {gridMonth[13][1]}/>
+            <Day chooseDay={func} month={props.month} year={props.year} numDay = {gridMonth[14][0]} monthFlag = {gridMonth[14][1]}/>
+            <Day chooseDay={func} month={props.month} year={props.year} numDay = {gridMonth[15][0]} monthFlag = {gridMonth[15][1]}/>
+            <Day chooseDay={func} month={props.month} year={props.year} numDay = {gridMonth[16][0]} monthFlag = {gridMonth[16][1]}/>
+            <Day chooseDay={func} month={props.month} year={props.year} numDay = {gridMonth[17][0]} monthFlag = {gridMonth[17][1]}/>
+            <Day chooseDay={func} month={props.month} year={props.year} numDay = {gridMonth[18][0]} monthFlag = {gridMonth[18][1]}/>
+            <Day chooseDay={func} month={props.month} year={props.year} numDay = {gridMonth[19][0]} monthFlag = {gridMonth[19][1]}/>
+            <Day chooseDay={func} month={props.month} year={props.year} numDay = {gridMonth[20][0]} monthFlag = {gridMonth[20][1]}/>
+            <Day chooseDay={func} month={props.month} year={props.year} numDay = {gridMonth[21][0]} monthFlag = {gridMonth[21][1]}/>
+            <Day chooseDay={func} month={props.month} year={props.year} numDay = {gridMonth[22][0]} monthFlag = {gridMonth[22][1]}/>
+            <Day chooseDay={func} month={props.month} year={props.year} numDay = {gridMonth[23][0]} monthFlag = {gridMonth[23][1]}/>
+            <Day chooseDay={func} month={props.month} year={props.year} numDay = {gridMonth[24][0]} monthFlag = {gridMonth[24][1]}/>
+            <Day chooseDay={func} month={props.month} year={props.year} numDay = {gridMonth[25][0]} monthFlag = {gridMonth[25][1]}/>
+            <Day chooseDay={func} month={props.month} year={props.year} numDay = {gridMonth[26][0]} monthFlag = {gridMonth[26][1]}/>
+            <Day chooseDay={func} month={props.month} year={props.year} numDay = {gridMonth[27][0]} monthFlag = {gridMonth[27][1]}/>
+            <Day chooseDay={func} month={props.month} year={props.year} numDay = {gridMonth[28][0]} monthFlag = {gridMonth[28][1]}/>
+            <Day chooseDay={func} month={props.month} year={props.year} numDay = {gridMonth[29][0]} monthFlag = {gridMonth[29][1]}/>
+            <Day chooseDay={func} month={props.month} year={props.year} numDay = {gridMonth[30][0]} monthFlag = {gridMonth[30][1]}/>
+            <Day chooseDay={func} month={props.month} year={props.year} numDay = {gridMonth[31][0]} monthFlag = {gridMonth[31][1]}/>
+            <Day chooseDay={func} month={props.month} year={props.year} numDay = {gridMonth[32][0]} monthFlag = {gridMonth[32][1]}/>
+            <Day chooseDay={func} month={props.month} year={props.year} numDay = {gridMonth[33][0]} monthFlag = {gridMonth[33][1]}/>
+            <Day chooseDay={func} month={props.month} year={props.year} numDay = {gridMonth[34][0]} monthFlag = {gridMonth[34][1]}/>
+            <Day chooseDay={func} month={props.month} year={props.year} numDay = {gridMonth[35][0]} monthFlag = {gridMonth[35][1]}/>
+            <Day chooseDay={func} month={props.month} year={props.year} numDay = {gridMonth[36][0]} monthFlag = {gridMonth[36][1]}/>
+            <Day chooseDay={func} month={props.month} year={props.year} numDay = {gridMonth[37][0]} monthFlag = {gridMonth[37][1]}/>
+            <Day chooseDay={func} month={props.month} year={props.year} numDay = {gridMonth[38][0]} monthFlag = {gridMonth[38][1]}/>
+            <Day chooseDay={func} month={props.month} year={props.year} numDay = {gridMonth[39][0]} monthFlag = {gridMonth[39][1]}/>
+            <Day chooseDay={func} month={props.month} year={props.year} numDay = {gridMonth[40][0]} monthFlag = {gridMonth[40][1]}/>
+            <Day chooseDay={func} month={props.month} year={props.year} numDay = {gridMonth[41][0]} monthFlag = {gridMonth[41][1]}/>
         </div>
     )
 }

@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-const Day = function(props)
+const Day = function({chooseDay}, props)
 {
     let dayName = "daySC " + props.monthFlag
     let date = new Date;
@@ -16,7 +16,7 @@ const Day = function(props)
 
 
     return(
-        <div className={dayName} onClick={props.chooseDay(date)}>
+        <div className={dayName} onClick={chooseDay(date)}>
             <a>{props.numDay}</a>
             <div className="events"></div>
         </div>

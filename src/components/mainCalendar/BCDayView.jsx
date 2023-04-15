@@ -19,18 +19,20 @@ const BCDayView = ({viewChoose}) => {
   };
 
   return (
-    <div className="mainCalendar">
+    <div className="mainCalendar-d">
       <div className="firstLineContainer">
-        <select className="selectFormat" onChange={event=> viewChoose(event.target.value)}>
-        <option value="month">
-          Month
-        </option>
-        <option value="week">
-          Week
-        </option>
+        <select className="selectFormat" onChange={(event)=> viewChoose(event.target.value)}>
         <option value="day">
-          Day
-        </option>
+              Day
+            </option>
+            <option value="week">
+              Week
+            </option>
+            <option value="month">
+              Month
+            </option>
+            
+            
       </select>
         <button className="previous" onClick={handlePrevDay}><img src={iconLeft} alt="previous" width="40px" height="40px" /></button>
         <a className="date-header">{selectedDate.toLocaleDateString("ru", { month: "long", day: "numeric", year: "numeric" })}</a>

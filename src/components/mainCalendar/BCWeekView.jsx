@@ -28,19 +28,20 @@ const BCWeekView = ({viewChoose})=> {
     };
   
     return (
-      <div className="mainCalendar">
+      <div className="mainCalendar-w">
         <div className="firstLineContainer">
-        <select className="selectFormat" onChange={(event)=> viewChoose(event.target.value)}>
-        <option value="month">
-          Month
-        </option>
-        <option value="week">
-          Week
-        </option>
-        <option value="day">
-          Day
-        </option>
-      </select>
+          <select className="selectFormat" onChange={(event)=> viewChoose(event.target.value)}>
+            <option value="week">
+              Week
+            </option>
+            <option value="month">
+              Month
+            </option>
+            
+            <option value="day">
+              Day
+            </option>
+          </select>
             <button className="previous" onClick={goToPreviousWeek}><img src={iconLeft} alt="previous" width="40px" height="40px" /></button>
             <a className="calendar__header">{startOfWeek.format('D MMMM YYYY')} - {endOfWeek.format('D MMMM YYYY')}</a>                
             <button className="next" onClick={goToNextWeek}><img src={iconRight} alt="previous" width="40px" height="40px" /></button>

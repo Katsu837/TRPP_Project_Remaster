@@ -1,0 +1,63 @@
+/* Стиль для страницы регистрации */
+
+/* Форма регистрации */
+.entry-main {
+    max-width: 400px;
+    min-width: 300px;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 9px;
+    -webkit-box-shadow: 0px 0px 40px 29px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 0px 40px 29px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 0px 40px 29px rgba(34, 60, 80, 0.2);
+}
+
+.registr {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+/* Заголовок формы */
+.entry-main h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Поля ввода */
+.entry-main input {
+    width: calc(100% - 20px);
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Кнопка отправки */
+.entry-main button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0069d9;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Ссылки на другие страницы */
+.entry-main a {
+    display: block;
+    text-align: center;
+    color: #007bff;
+    margin-top: 10px;
+}
+
+/* Ошибка валидации */
+.entry-main .error {
+    color: #dc3545;
+    font-size: 16px;
+    margin-bottom: 10px;
+}

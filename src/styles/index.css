@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#root{
+    margin: 0;
+    padding: 0;
+}
+
+.MainPage
+{
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 300px calc(100% - 330px);
+    grid-template-rows: 60px 110px 220px 540px;
+    grid-gap: 30px;
+}
+
+.smallCalendar
+{
+    grid-row: 3/4;
+    grid-column: 1/2;
+    background: lightgray;
+    border-radius: 20px;
+}
+
+
+.bigCalendar
+{
+    grid-row: 2/5;
+    grid-column: 2/3;
+    background: lightgray;
+    border-radius: 20px;
+}
+.calendar
+{
+    grid-row: 2/5;
+    grid-column: 2/3;
+    background: lightgray;
+    border-radius: 20px;
+}
+.day-view {
+    grid-row: 2/5;
+    grid-column: 2/3;
+    background: lightgray;
+    border-radius: 20px;
+}
+.Calendarlists
+{
+    grid-row: 4/5;
+    grid-column: 1/2;
+    border-radius: 50px;
+}

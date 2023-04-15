@@ -1,0 +1,76 @@
+.Calendarlists{
+    background-color: rgb(182, 160, 160);
+    border: 3px;
+    border-color: black;
+
+}
+#textButton{
+    background:none; 
+    border:none;  
+    margin-top: 10px;
+    margin-left: 70px;
+
+}
+#textButton:hover{
+    background-color: rgb(172, 173, 172);
+    border-radius: 5px;
+}
+.Circle {
+    background: #456BD9;
+    border: 2px solid #0F1C3F;
+    border-radius: 50%;
+    box-shadow: 6px 6px 0 0 rgba(15, 28, 63, 0.125);
+    height: 50px;
+    width: 50px;
+    display: inline-block
+}
+
+.Friendprof{
+    display: flex;
+    margin-left: 30px;
+    align-items: center;
+    margin-top: 15px ;
+    align-items: center;
+
+
+}
+.Listname{
+    margin-left: 20px;
+
+    margin-bottom: 20px;
+
+}
+.Friendname{
+    display: inline-block;
+    margin-left:10px;
+
+
+}
+input{
+    display:block;
+    width:80%;
+    margin:10px 0;
+    padding:10px;
+    border-radius:10px;
+    border: 1px solid #eee;
+    transition: .3s border-color;
+    margin-left: 20px;
+    margin-top:70px;
+
+}
+.MyCalendarName{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.Frsearchbtn{
+    font-family: inherit;
+  appearance: none;
+  border: 0;
+  border-radius: 5px;
+  background: #4676d7;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-left: 20px;
+}

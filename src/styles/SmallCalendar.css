@@ -1,0 +1,114 @@
+.smallCalendar
+{
+    padding: 5px 10px;
+    display: grid;
+    grid-template-rows: 30px 30px 150px;
+    grid-template-columns: repeat(7, 40px);
+    font-family: "Comic Sans MS";
+    font-size: 11pt;
+}
+
+.previousSC
+{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.nextSC
+{
+    grid-column: 7/8;
+    grid-row: 1/2;
+}
+button
+{
+    background: transparent;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    opacity: .5;
+}
+button:hover
+{
+    opacity: 1;
+}
+
+.monthYearSC
+{
+    grid-column: 2/7;
+    grid-row: 1/2;
+    background: transparent;
+    font-size: 15pt;
+    text-align: center;
+}
+
+.dayOfTheWeekSC
+{
+    grid-row: 2/3;
+    grid-column: 1/8;
+    display: grid;
+    grid-template-columns: repeat(7,40px);
+    grid-template-rows: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 13pt;
+}
+
+.moSC
+{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.tuSC
+{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.weSC
+{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+.thSC
+{
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+.frSC
+{
+    grid-column: 5/6;
+    grid-row: 1/2;
+}
+.saSC
+{
+    grid-column: 6/7;
+    grid-row: 1/2;
+}
+.suSC
+{
+    grid-column: 7/8;
+    grid-row: 1/2;
+}
+
+.gridOfMonthSC
+{
+    grid-row: 3/4;
+    grid-column: 1/8;
+    display: grid;
+    grid-template-rows: repeat(6,25px);
+    grid-template-columns: repeat(7,40px);
+    text-align: center;
+}
+
+.p, .n
+{
+    color: gray;
+}
+
+.x
+{
+
+    border-radius: 20px;
+    background: darkgrey;
+}

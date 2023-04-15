@@ -9,7 +9,7 @@ function MainPage()
 {
     const[choosenDay, chooseDay] = useState(new Date())
 
-    function func(date)
+    const func = (date) =>
     {
         chooseDay(date);
     }

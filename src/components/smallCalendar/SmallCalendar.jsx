@@ -5,7 +5,7 @@ import '../../styles/SmallCalendar.css'
 import iconRight from '../image/icons8-_-24.png'
 import iconLeft from '../image/icons8-_-24 (1).png'
 
-const SmallCalendar = function (props)
+const SmallCalendar = function (chooseDay)
 {
     let todayMonth = new Date().getMonth();
     let todayYear = new Date().getFullYear();
@@ -41,7 +41,7 @@ const SmallCalendar = function (props)
             <a className="monthYearSC">{nameMonth}, {year}</a>
             <button className="nextSC" onClick={nextMonth}>{<img src={iconRight} alt="previous" width="20px" height="20px" />}</button>
             <DaysOfTheWeek/>
-            <GridOfMonth month={month % 12} year={year} сhooseDay={props.chooseDay}/>
+            <GridOfMonth month={month % 12} year={year} сhooseDay={()=>chooseDay}/>
         </div>
     )
 }

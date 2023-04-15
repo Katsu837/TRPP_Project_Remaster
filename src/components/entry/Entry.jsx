@@ -23,7 +23,7 @@ const Entry = function(){
                     navigate("/mainPage") // пока что этой страницы нет, потому что вы еще ее не сделали
                 }}>Entry</button>            
             </form>
-            <Link to="/reg">Wanna create an account?</Link>
+            <Link to="/Registration">Wanna create an account?</Link>
         </div>)
 }
 

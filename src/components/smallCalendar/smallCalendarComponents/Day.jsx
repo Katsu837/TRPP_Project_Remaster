@@ -14,9 +14,13 @@ const Day = function(props)
 
     date.setDate(props.numDay);
 
+    const onClick = () => {
+        props.chooseDay(date)
+        console.log(date)
+    }
 
     return(
-        <div className={dayName} onClick={props.chooseDay(date)}>
+        <div className={dayName} onClick={onClick}>
             <a>{props.numDay}</a>
             <div className="events"></div>
         </div>

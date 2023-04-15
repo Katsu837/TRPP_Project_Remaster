@@ -6,7 +6,7 @@ import iconRight from "../image/icons8r.png"
 
 import '../../styles/Calendar.css'
 
-function Calendar() {
+const BCWeekView = ()=> {
     const [date, setDate] = useState(moment());
   
     const startOfWeek = date.clone().startOf('week');
@@ -59,4 +59,4 @@ function Calendar() {
     );
   }
   
-  export default Calendar;
+  export default BCWeekView;

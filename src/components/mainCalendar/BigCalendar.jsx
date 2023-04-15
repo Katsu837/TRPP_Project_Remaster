@@ -4,11 +4,9 @@ import BCWeekView from "./BCWeekView";
 import BCMonthView from "./BCMonthView";
 
 
-const BigCalendar = function () {
+const BigCalendar = () => {
   
-  const [view, setView] = useState({
-    view: "month"
-  })
+  const [view, setView] = useState("month")
 
   console.log(view)
 

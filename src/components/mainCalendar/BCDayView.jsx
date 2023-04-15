@@ -3,7 +3,7 @@ import '../../styles/DayView.css'
 import iconLeft from "../image/icons8l.png"
 import iconRight from "../image/icons8r.png"
 
-const DayView = () => {
+const BCDayView = () => {
   const [selectedDate, setSelectedDate] = useState(new Date());
 
   const hours = [...Array(24).keys()]; // создаем массив чисел от 0 до 23
@@ -37,4 +37,4 @@ const DayView = () => {
   );
 };
 
-export default DayView;
+export default BCDayView;

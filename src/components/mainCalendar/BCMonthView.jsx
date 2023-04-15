@@ -5,7 +5,7 @@ import '../../styles/BigCalendar.css'
 import iconLeft from "../image/icons8l.png"
 import iconRight from "../image/icons8r.png"
 
-const BCMonthView = function ()
+const BCMonthView = () =>
 {
     let todayMonth = new Date().getMonth();
     let todayYear = new Date().getFullYear();

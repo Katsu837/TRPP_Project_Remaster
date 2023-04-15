@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import moment from 'moment';
 import 'moment/locale/ru';
-import iconLeft from "./image/icons8l.png"
-import iconRight from "./image/icons8r.png"
+import iconLeft from "../image/icons8l.png"
+import iconRight from "../image/icons8r.png"
 
-import '../styles/Calendar.css'
+import '../../styles/Calendar.css'
 
 function Calendar() {
     const [date, setDate] = useState(moment());
@@ -29,13 +29,8 @@ function Calendar() {
     };
   
     return (
-      <div className="calendar">
+      <div className="mainCalendar">
         <div className="firstLineContainer">
-            <select className="selectFormat">
-                <option value="monthOption">Month</option>
-                <option value="weekOption">Week</option>
-                <option value="dayOption">Day</option>
-            </select>
             <button className="previous" onClick={goToPreviousWeek}><img src={iconLeft} alt="previous" width="40px" height="40px" /></button>
             <a className="calendar__header">{startOfWeek.format('D MMMM YYYY')} - {endOfWeek.format('D MMMM YYYY')}</a>                
             <button className="next" onClick={goToNextWeek}><img src={iconRight} alt="previous" width="40px" height="40px" /></button>

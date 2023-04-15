@@ -8,11 +8,15 @@ const BigCalendar = () => {
   
   const [view, setView] = useState("month")
 
+  // const viewChoose = () {
+
+  // }
+
   console.log(view)
 
   return (
     <div className="bigCalendar">
-      <select className="selectFormat" onChange={event=> setView(event.target.value)}>
+      {/* <select className="selectFormat" onChange={event=> setView(event.target.value)}>
         <option value="month">
           Month
         </option>
@@ -22,12 +26,12 @@ const BigCalendar = () => {
         <option value="day">
           Day
         </option>
-      </select>
+      </select> */}
       {view === "month"
-        ? <BCMonthView/>
+        ? <BCMonthView viewChoose={setView}/>
         : view === "week"
-            ? <BCWeekView/>
-            : <BCDayView/>
+            ? <BCWeekView viewChoose={setView}/>
+            : <BCDayView viewChoose={setView}/>
 
       }
       

@@ -5,7 +5,7 @@ import '../../styles/BigCalendar.css'
 import iconLeft from "../image/icons8l.png"
 import iconRight from "../image/icons8r.png"
 
-const BCMonthView = () =>
+const BCMonthView = ({viewChoose}) =>
 {
     let todayMonth = new Date().getMonth();
     let todayYear = new Date().getFullYear();
@@ -38,6 +38,17 @@ const BCMonthView = () =>
     return(
         <div className="mainCalendar">
             <div className="firstLineContainer">
+            <select className="selectFormat" onChange={event=> viewChoose(event.target.value)}>
+        <option value="month">
+          Month
+        </option>
+        <option value="week">
+          Week
+        </option>
+        <option value="day">
+          Day
+        </option>
+      </select>
                 <button className="previous" onClick={previousMonth}><img src={iconLeft} alt="previous" width="40px" height="40px" /></button>
                 <a className="monthYear">{nameMonth}, {year}</a>
                 <button className="next" onClick={nextMonth}><img src={iconRight} alt="previous" width="40px" height="40px" /></button>

@@ -4,7 +4,7 @@ import Entry from "./components/entry/Entry";
 import Registration from "./components/registration/Registration";
 import './styles/index.css'
 import MainPage from "./components/MainPage";
-import CalendarList from "./components/CalendarList";
+import CalendarList from "./components/Friendsaddsearchopen/CalendarList";
 
 
 function App() {

@@ -8,6 +8,8 @@ const BCDayView = ({viewChoose}) => {
 
   const hours = [...Array(24).keys()]; // создаем массив чисел от 0 до 23
 
+  const tenminuteparts = [...Array(144).keys()]; // создаем массив чисел от 0 до 143
+
   const handlePrevDay = () => {
     const prevDay = new Date(selectedDate.getTime() - 24 * 60 * 60 * 1000); // вычитаем 1 день из выбранной даты
     setSelectedDate(prevDay);
@@ -20,9 +22,10 @@ const BCDayView = ({viewChoose}) => {
 
   return (
     <div className="mainCalendar-d">
-      <div className="firstLineContainer">
-        <select className="selectFormat" onChange={(event)=> viewChoose(event.target.value)}>
-        <option value="day">
+      <div className="mainCalendar-d">
+        <div className="firstLineContainer">
+          <select className="selectFormat" onChange={(event)=> viewChoose(event.target.value)}>
+            <option value="day">
               Day
             </option>
             <option value="week">
@@ -30,23 +33,34 @@ const BCDayView = ({viewChoose}) => {
             </option>
             <option value="month">
               Month
-            </option>
-            
-            
-      </select>
-        <button className="previous" onClick={handlePrevDay}><img src={iconLeft} alt="previous" width="40px" height="40px" /></button>
-        <a className="date-header">{selectedDate.toLocaleDateString("ru", { month: "long", day: "numeric", year: "numeric" })}</a>
-        <button className="next" onClick={handleNextDay}><img src={iconRight} alt="previous" width="40px" height="40px" /></button>
-      </div>
-      <div className="hour-grid">
-        {hours.map((hour) => (
-          <div key={hour} className="hour-row">
-            <div className="hour-label">{`${hour}:00`}</div>
-            <div className="hour-cell"> {/* здесь может быть ваш контент для каждого часа */}</div>
-          </div>
-        ))}
+            </option>            
+          </select>
+          <button className="previous" onClick={handlePrevDay}><img src={iconLeft} alt="previous" width="40px" height="40px" /></button>
+          <a className="date-header">{selectedDate.toLocaleDateString("ru", { month: "long", day: "numeric", year: "numeric" })}</a>
+          <button className="next" onClick={handleNextDay}><img src={iconRight} alt="previous" width="40px" height="40px" /></button>
+        </div>
+
+        <div className="hour-grid">
+          {hours.map((hour) => (
+            <div key={hour} className="hour-row">
+              <div className="hour-label">{`${hour}:00`}
+            </div>
+          </div>))}
+        </div>
+
+        <div className="sensor-panel">
+          {tenminuteparts.map((part) => (
+            <div key={part} className="part-row">
+
+                
+
+            </div>
+          ))}
+        </div>
       </div>
     </div>
+    
+
   );
 };
 

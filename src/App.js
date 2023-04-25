@@ -5,7 +5,7 @@ import Registration from "./components/registration/Registration";
 import './styles/index.css'
 import MainPage from "./components/MainPage";
 import CalendarList from "./components/Friendsaddsearchopen/CalendarList";
-
+import Profile from "./Components/Profile/Profile";
 
 function App() {
   return (
@@ -18,6 +18,7 @@ function App() {
       </BrowserRouter>
       <div className="App">
       <CalendarList />
+       <Profile/>
       </div>
   );
 }

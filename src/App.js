@@ -4,6 +4,7 @@ import Entry from "./components/entry/Entry";
 import Registration from "./components/registration/Registration";
 import './styles/index.css'
 import MainPage from "./components/MainPage";
+import CalendarList from "./components/CalendarList";
 
 
 function App() {
@@ -15,6 +16,9 @@ function App() {
           <Route path="/MainPage" element={<MainPage/>}></Route>
         </Routes>
       </BrowserRouter>
+      <div className="App">
+      <CalendarList />
+      </div>
   );
 }
 

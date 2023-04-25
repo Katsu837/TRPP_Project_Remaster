@@ -1,0 +1,22 @@
+.avatar {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border: 2px solid lightgray;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .avatar-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .avatar input[type="file"] {
+    display: none;
+  }
+  

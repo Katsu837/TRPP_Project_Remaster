@@ -4,7 +4,7 @@ import BCWeekView from "./BCWeekView";
 import BCMonthView from "./BCMonthView";
 
 
-const BigCalendar = () => {
+const BigCalendar = (props) => {
   
   const [view, setView] = useState("month")
 
@@ -17,10 +17,10 @@ const BigCalendar = () => {
   return (
     <div className="bigCalendar">
       {view === "month"
-        ? <BCMonthView viewChoose={viewChoose}/>
+        ? <BCMonthView viewChoose={viewChoose} choosenDay={props.choosenDay}/>
         : view === "week"
-            ? <BCWeekView viewChoose={viewChoose}/>
-            : <BCDayView viewChoose={viewChoose}/>
+            ? <BCWeekView viewChoose={viewChoose} choosenDay={props.choosenDay}/>
+            : <BCDayView viewChoose={viewChoose} choosenDay={props.choosenDay}/>
 
       }
       

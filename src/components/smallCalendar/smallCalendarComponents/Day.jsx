@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-const Day = function({chooseDay}, props)
+const Day = function(props)
 {
     let dayName = "daySC " + props.monthFlag
     let date = new Date;
@@ -14,9 +14,13 @@ const Day = function({chooseDay}, props)
 
     date.setDate(props.numDay);
 
+    const onClick = () => {
+        props.chooseDay(date)
+        console.log(date)
+    }
 
     return(
-        <div className={dayName} onClick={chooseDay(date)}>
+        <div className={dayName} onClick={onClick}>
             <a>{props.numDay}</a>
             <div className="events"></div>
         </div>

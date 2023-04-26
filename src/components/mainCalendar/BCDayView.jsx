@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import '../../styles/DayView.css'
-import iconLeft from "./image/icons8l.png"
-import iconRight from "./image/icons8r.png"
+import iconLeft from "../image/icons8l.png"
+import iconRight from "../image/icons8r.png"
 
-const DayView = () => {
+const BCDayView = ({viewChoose}) => {
   const [selectedDate, setSelectedDate] = useState(new Date());
 
   const hours = [...Array(24).keys()]; // создаем массив чисел от 0 до 23
@@ -19,13 +19,21 @@ const DayView = () => {
   };
 
   return (
-    <div className="day-view">
-      <div className="day-header">
-        <select className="selectFormat">
-          <option value="monthOption">Month</option>
-          <option value="weekOption">Week</option>
-          <option value="dayOption">Day</option>
-        </select>
+    <div className="mainCalendar-d">
+      <div className="firstLineContainer">
+        <select className="selectFormat" onChange={(event)=> viewChoose(event.target.value)}>
+        <option value="day">
+              Day
+            </option>
+            <option value="week">
+              Week
+            </option>
+            <option value="month">
+              Month
+            </option>
+            
+            
+      </select>
         <button className="previous" onClick={handlePrevDay}><img src={iconLeft} alt="previous" width="40px" height="40px" /></button>
         <a className="date-header">{selectedDate.toLocaleDateString("ru", { month: "long", day: "numeric", year: "numeric" })}</a>
         <button className="next" onClick={handleNextDay}><img src={iconRight} alt="previous" width="40px" height="40px" /></button>
@@ -42,4 +50,4 @@ const DayView = () => {
   );
 };
 
-export default DayView;
+export default BCDayView;

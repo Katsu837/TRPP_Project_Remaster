@@ -1,0 +1,30 @@
+.firstLine {
+    display: grid;
+    grid-template-columns: 180px 1200px 105px;
+    grid-template-rows: 60px;
+    grid-gap: 25px;
+}
+
+.nameProject {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.search {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    width: 1200px;
+    padding: 0;
+    margin: 0;
+}
+.searchButton {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    width: 100px;
+    justify-self: end;
+    z-index: 1;
+}
+.settings {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}

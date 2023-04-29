@@ -35,6 +35,7 @@ const SmallCalendar = function ({chooseDay})
         else setMonth(month - 1)
     }
 
+
     return(
         <div className="smallCalendar">
             <button className="previousSC" onClick={previousMonth}>{<img src={iconLeft} alt="previous" width="20px" height="20px" />}</button>

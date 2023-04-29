@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import loop from "../../image/loop.png"
 function FriendSearch({ onAddFriend }) {
   const [searchTerm, setSearchTerm] = useState("");
 
@@ -16,9 +16,9 @@ function FriendSearch({ onAddFriend }) {
   };
 
   return (
-    <div>
-      <input className="Frsearch" type="text" placeholder="Поиск друзей" onChange={handleSearch} />
-      <button className="Frsearchbtn" onClick={handleAddFriend}>Добавить друга</button>
+    <div className="Frsearch">
+      <input className="searchinput" type="text" placeholder="Поиск друга"/>
+      <button className="searschbtn"><img className="loopimg" src={loop}/></button>
     </div>
   );
 }

@@ -53,6 +53,8 @@ const GridOfMonth = function(props)
         gridMonth[i][0] = k
         gridMonth[i][1] = "n"
     }
+
+
     return(
         <div className="gridOfMonthSC">
             <Day chooseDay={()=>props.chooseDay} month={props.month} year={props.year} numDay = {gridMonth[0][0]} monthFlag = {gridMonth[0][1]}/>

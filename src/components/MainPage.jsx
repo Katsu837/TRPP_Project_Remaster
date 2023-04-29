@@ -3,7 +3,7 @@ import SmallCalendar from "./smallCalendar/SmallCalendar";
 import BigCalendar from "./mainCalendar/BigCalendar";
 import CalendarList from "./friendsCalendarList/CalendarList";
 import "../styles/index.css"
-import Profile from "./profile/Profile";
+import Profile from "./Profile/Profile";
 
 
 function MainPage()
@@ -21,7 +21,7 @@ function MainPage()
             <Profile/>
             <SmallCalendar chooseDay={func}/>
             <CalendarList/>
-            {/*<BigCalendar choosenDay={choosenDay}/>*/}
+            {/* <BigCalendar choosenDay={choosenDay}/> */}
         </div>
     )
 }

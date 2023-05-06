@@ -2,8 +2,13 @@ import React, {useState} from "react";
 import SmallCalendar from "./smallCalendar/SmallCalendar";
 import BigCalendar from "./mainCalendar/BigCalendar";
 import CalendarList from "./friendsCalendarList/CalendarList";
-import "../styles/index.css"
+
 import Profile from "./Profile/Profile";
+import Settings from "./settings/Settings"
+import "../styles/index.css"
+import "../styles/FirstLine.css"
+import loop from "../components/image/loop.png"
+
 
 
 function MainPage()
@@ -21,7 +26,13 @@ function MainPage()
             <Profile/>
             <SmallCalendar chooseDay={func}/>
             <CalendarList/>
-            {/* <BigCalendar choosenDay={choosenDay}/> */}
+            <div className="firstLine">
+                <h2 className="nameProject"> Name Project </h2>
+                <input type="search" className="search"/>
+                <button className="searchButton"><img src={loop} alt="loop" width="20px" height="20px"/></button>
+                <Settings/>
+            </div>
+            {/*<BigCalendar choosenDay={choosenDay}/>*/}
         </div>
     )
 }

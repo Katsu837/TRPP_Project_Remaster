@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react";
 const Day = function(props)
 {
     let dayName = "daySC " + props.monthFlag
-    let date = new Date;
+    let date = new Date();
 
     if(props.monthFlag == "n") date.setMonth((props.month == 11) ? 0 : props.month + 1 )
     else if(props.monthFlag == "p") date.setMonth((props.month == 0) ? 11 : props.month - 1)

@@ -9,6 +9,23 @@
 /* Hide default HTML checkbox */
 .themeSwitcherInput {display:none;}
 
+.settings{}
+
+.settings-icon{
+    transition: .7s;
+}
+
+.rotate-active{
+    transform: rotate(180deg);
+    
+}
+
+.open-settings{
+    background-color: darkgrey;
+    border-radius: 10%;
+    padding: 10px;
+}
+
 /* The slider */
 .slider {
     position: absolute;

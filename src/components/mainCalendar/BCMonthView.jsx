@@ -5,18 +5,12 @@ import '../../styles/BigCalendar.css'
 import iconLeft from "../image/icons8l.png"
 import iconRight from "../image/icons8r.png"
 
-const BCMonthView = ({viewChoose, choosenDay}) =>
+const BCMonthView = ({viewChoose}) =>
 {
     let todayMonth = new Date().getMonth();
     let todayYear = new Date().getFullYear();
     const [month, setMonth] = useState(todayMonth);
     const [year, setYear] = useState(todayYear)
-
-    if(choosenDay !== new Date())
-    {
-        setMonth(choosenDay.getMonth());
-        setYear(choosenDay.getFullYear());
-    }
 
     console.log(month)
 
@@ -60,7 +54,7 @@ const BCMonthView = ({viewChoose, choosenDay}) =>
                 <button className="next" onClick={nextMonth}><img src={iconRight} alt="previous" width="40px" height="40px" /></button>
             </div>
             <DaysOfTheWeek/>
-            <GridOfMonth month={month % 12} year={year} choosenDay={choosenDay}/>
+            <GridOfMonth month={month % 12} year={year}/>
         </div>
     )
 }

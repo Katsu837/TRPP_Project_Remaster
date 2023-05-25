@@ -5,10 +5,8 @@ import iconLeft from "../image/icons8l.png"
 import iconRight from "../image/icons8r.png"
 import '../../styles/Calendar.css'
 
-const BCWeekView = ({viewChoose, choosenDay})=> {
+const BCWeekView = ({viewChoose})=> {
     const [date, setDate] = useState(moment());
-
-    if(choosenDay !== new Date()) setDate(choosenDay);
 
     const startOfWeek = date.clone().startOf('week');
     const endOfWeek = date.clone().endOf('week');

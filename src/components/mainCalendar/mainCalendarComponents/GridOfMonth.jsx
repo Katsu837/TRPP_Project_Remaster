@@ -36,7 +36,6 @@ const GridOfMonth = function(props)
     {
         gridMonth[i][0] = k
         gridMonth[i][1] = "t"
-        if(k == props.choosenDay.getDate()) gridMonth[i][1] += " chooseDay"
     }
     for (let i = numOfWeekDay-1, k = countPreviousMonthDay; i >= 0; k--, i--)
     {

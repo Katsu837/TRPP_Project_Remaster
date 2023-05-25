@@ -3,14 +3,12 @@ import '../../styles/DayView.css'
 import iconLeft from "../image/icons8l.png"
 import iconRight from "../image/icons8r.png"
 
-const BCDayView = ({viewChoose, choosenDay}) => {
+const BCDayView = ({viewChoose}) => {
   const [selectedDate, setSelectedDate] = useState(new Date());
 
   const hours = [...Array(24).keys()]; // создаем массив чисел от 0 до 23
 
   const tenminuteparts = [...Array(144).keys()]; // создаем массив чисел от 0 до 143
-
-  if(choosenDay !== new Date()) setSelectedDate(choosenDay); // меняем день в случае, если пользователь выбрал его в календаре
 
   const handlePrevDay = () => {
     const prevDay = new Date(selectedDate.getTime() - 24 * 60 * 60 * 1000); // вычитаем 1 день из выбранной даты

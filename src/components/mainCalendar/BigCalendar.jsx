@@ -17,10 +17,10 @@ const BigCalendar = (props) => {
   return (
     <div className="bigCalendar">
       {view === "month"
-        ? <BCMonthView viewChoose={viewChoose} choosenDay={props.choosenDay}/>
+        ? <BCMonthView viewChoose={viewChoose}/>
         : view === "week"
-            ? <BCWeekView viewChoose={viewChoose} choosenDay={props.choosenDay}/>
-            : <BCDayView viewChoose={viewChoose} choosenDay={props.choosenDay}/>
+            ? <BCWeekView viewChoose={viewChoose} />
+            : <BCDayView viewChoose={viewChoose} />
 
       }
       

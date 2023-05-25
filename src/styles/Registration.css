@@ -14,12 +14,12 @@
 
 
 
-html, body, #root, .registr{
+/* html, body, #root, .registr{
     height: 100%;
     width: 100%;
     overflow-x: hidden;
     background-color: #868bad;
-}
+} */
 
 .registr {
     display: grid;

@@ -5,7 +5,7 @@ import '../../styles/SmallCalendar.css'
 import iconRight from '../image/icons8-_-24.png'
 import iconLeft from '../image/icons8-_-24 (1).png'
 
-const SmallCalendar = function (chooseDay)
+const SmallCalendar = function ({chooseDay})
 {
     let todayMonth = new Date().getMonth();
     let todayYear = new Date().getFullYear();

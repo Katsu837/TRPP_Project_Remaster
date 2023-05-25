@@ -2,11 +2,13 @@ import React, {useState} from "react";
 import SmallCalendar from "./smallCalendar/SmallCalendar";
 import BigCalendar from "./mainCalendar/BigCalendar";
 import CalendarList from "./friendsCalendarList/CalendarList";
-import Profile from "./profile/Profile";
+
+import Profile from "./Profile/Profile";
 import Settings from "./settings/Settings"
 import "../styles/index.css"
 import "../styles/FirstLine.css"
 import loop from "../components/image/loop.png"
+
 
 
 function MainPage()

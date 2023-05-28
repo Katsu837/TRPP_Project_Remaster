@@ -52,6 +52,7 @@ const BCMonthView = ({viewChoose}) =>
                 <button className="previous" onClick={previousMonth}><img src={iconLeft} alt="previous" width="40px" height="40px" /></button>
                 <a className="monthYear">{nameMonth}, {year}</a>
                 <button className="next" onClick={nextMonth}><img src={iconRight} alt="previous" width="40px" height="40px" /></button>
+                <div className="ownerCalendar">Мой календарь</div>
             </div>
             <DaysOfTheWeek/>
             <GridOfMonth month={month % 12} year={year}/>

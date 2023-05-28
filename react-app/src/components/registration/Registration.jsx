@@ -38,10 +38,10 @@ const Registration = function(){
         <div className="registration-main">
             <h2>Registration</h2>
             <form>
-                <input type="text" id="login" value={user.name} onChange={event => setUser({...user, email: event.target.value})} required />
-                <input type="email" id="email" value={user.email} onChange={event => setUser({...user, email: event.target.value})} required />
-                <input type="password" id="password" value={user.password} onChange={event => setUser({...user, password: event.target.value})} required />
-                <input type="password" id="confPassword" value={user.confirm} onChange={event => setUser({...user, confirm: event.target.value})} required />
+                <input type="text" id="login" value={user.name} onChange={event => setUser({...user, email: event.target.value})} required placeholder="name"/>
+                <input type="email" id="email" value={user.email} onChange={event => setUser({...user, email: event.target.value})} required placeholder="email"/>
+                <input type="password" id="password" value={user.password} onChange={event => setUser({...user, password: event.target.value})} required placeholder="password"/>
+                <input type="password" id="confPassword" value={user.confirm} onChange={event => setUser({...user, confirm: event.target.value})} required placeholder="confirm password"/>
                 {incorrInp
                     ? <div>Пароли не совпадают</div>
                     : <div></div>

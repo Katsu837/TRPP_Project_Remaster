@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+.nameProject{
+    padding-top: 10px;
+    font-size: 32px;
+}
+
 #root{
     margin: 0;
     padding: 0;

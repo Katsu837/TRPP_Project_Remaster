@@ -1,3 +1,7 @@
+* {
+  font-family: "Comic Sans MS";
+}
+
 .Calendarlists{
     background-color: rgb(200, 200, 200);
     border: 3px;
@@ -153,13 +157,13 @@ input{
   }
   
   .searschbtn {
-   
+    height: 53px;
     padding: 10px;
     background-color: #007bff;
     color: #fff;
     border: none;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
     cursor: pointer;
     margin-right: 10px;
   }
@@ -170,7 +174,7 @@ input{
   }
 
   .friends-list-container {
-    height: 390px;
+    height: 370px;
     overflow-y: scroll;
   }
   .friends-list-container::-webkit-scrollbar{
@@ -200,8 +204,8 @@ input{
   
   
   .Avatar {
-    width: 30px;
-    height: 30px;
+    width: 55px;
+    height: 55px;
     object-fit: cover;
     display: flex;
     align-items: center;

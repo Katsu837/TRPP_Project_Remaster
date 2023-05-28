@@ -9,3 +9,4 @@ COPY target/*.jar app.jar
 
 # Команда, которая будет запущена при запуске контейнера
 CMD [ "java", "-jar", "app.jar" ]
+

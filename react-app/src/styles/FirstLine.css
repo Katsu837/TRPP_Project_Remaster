@@ -1,6 +1,6 @@
 .firstLine {
     display: grid;
-    grid-template-columns: 180px 1200px 105px;
+    grid-template-columns: 180px 1fr 30px;
     grid-template-rows: 60px;
     grid-gap: 25px;
 }
@@ -10,12 +10,13 @@
     grid-row: 1/2;
 }
 
-.search {
+.search-main {
     grid-column: 2/3;
     grid-row: 1/2;
-    width: 1200px;
+    width: 100%;
     padding: 0;
     margin: 0;
+    border: solid grey 2px;
 }
 .searchButton {
     grid-column: 2/3;
@@ -25,6 +26,7 @@
     z-index: 1;
 }
 .settings {
+    padding-top: 12px;
     grid-column: 3/4;
     grid-row: 1/2;
 }

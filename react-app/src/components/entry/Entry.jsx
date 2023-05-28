@@ -38,8 +38,8 @@ const Entry = function(){
         <div className="entry-main">
             <h2>Entry</h2>
             <form>
-                <input type="text" id="login" value={user.email} onChange={event => setUser({...user, email: event.target.value})} required />
-                <input type="password" id="password" value={user.password} onChange={event => setUser({...user, password: event.target.value})} required />
+                <input type="text" id="login" value={user.email} onChange={event => setUser({...user, email: event.target.value})} required placeholder="email"/>
+                <input type="password" id="password" value={user.password} onChange={event => setUser({...user, password: event.target.value})} required placeholder="password"/>
                 <button id="entry"
                 onClick={(event)=>{
                     event.preventDefault()

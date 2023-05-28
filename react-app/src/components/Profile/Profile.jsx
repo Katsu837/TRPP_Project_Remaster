@@ -19,7 +19,7 @@ const Profile = () => {
           <ProfileAvatar imgUrl="default-avatar.jpg" />
           <ProfileNickname name={userAuth.name} tag="#1234" />
         </div>
-        <ProfileNextEvent nextEventName={"Поход к врачу"} nextEventTime={"14 00"} nextEventLocation={"Адрес Больницы"} />
+        <ProfileNextEvent nextEventName={"Поход в поликлинику"} nextEventTime={"7:00"} nextEventLocation={"Ломоносовский пр., 8"} />
         <ProfileNotification />
       </div>
     </div>

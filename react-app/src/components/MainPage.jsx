@@ -26,8 +26,8 @@ function MainPage()
             <SmallCalendar chooseDay={func}/>
             <CalendarList/>
             <div className="firstLine">
-                <h2 className="nameProject"> Name Project </h2>
-                <input type="search" className="search"/>
+                <h2 className="nameProject"> EventPlanner </h2>
+                <input type="search" className="search-main"/>
                 <button className="searchButton"><img src={loop} alt="loop" width="20px" height="20px"/></button>
                 <Settings/>
             </div>

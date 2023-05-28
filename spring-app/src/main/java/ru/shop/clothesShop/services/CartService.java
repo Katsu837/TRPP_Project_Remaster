@@ -9,7 +9,6 @@ import ru.shop.clothesShop.entites.Product;
 import ru.shop.clothesShop.repositories.CustomerRepository;
 import ru.shop.clothesShop.repositories.ProductRepository;
 
-
 import java.util.List;
 
 @Service

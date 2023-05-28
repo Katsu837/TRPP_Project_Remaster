@@ -1,0 +1,37 @@
+version: '3'
+services:
+  react:
+    build:
+      context: ./react-app
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+    depends_on:
+      - spring
+  spring:
+    build:
+      context: ./spring-app
+      dockerfile: Dockerfile
+    ports:
+      - 8080:8080
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://trpp_project_remaster-db-1:5432/trppProject
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: 0813526
+      # spring_jpa_hibernate_ddl_auto: update
+      # spring_jpa_show_sql: true
+      # upload_directory: src/main/resources/static/products
+    networks:
+      - my-network
+  db:
+    image: postgres:latest
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_DB: trppProject
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 0813526
+networks:
+  my-network:
+    external: true
+  
